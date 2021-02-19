@@ -1,0 +1,20 @@
+[
+  {
+    "latitude" : 47.3899,
+    "longitude" : 8.5158,
+    "imageSrc" : "/images/Element1.svg",
+    "sqm" : "70qm2"
+  },
+  {
+    "latitude" : 47.3875,
+    "longitude" : 8.5247,
+    "imageSrc" : "/images/Element2.svg",
+    "sqm" : "26qm2"
+  },
+  {
+    "latitude" : 47.3838,
+    "longitude" : 8.5254,
+    "imageSrc" : "/images/Element3.svg",
+    "sqm" : "32qm2"
+  }
+]
