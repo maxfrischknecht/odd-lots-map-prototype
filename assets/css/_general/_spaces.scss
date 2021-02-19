@@ -1,0 +1,51 @@
+// spaces variables
+
+$base-height: 0.8rem; // 8px
+
+$base-2: $base-height * 2;  // 16px
+$base-3: $base-height * 3;  // 24px
+$base-4: $base-height * 4;  // 32px
+
+$space-lg: $base-height * 5;  // 40px
+$space-xl: $base-height * 10; // 80px
+
+//// BOTTOM
+.space-b1 {
+  padding-bottom: $base-height;
+}
+.space-b2 {
+  padding-bottom: $base-2;
+}
+.space-b3 {
+  padding-bottom: $base-3;
+}
+.space-b4 {
+  padding-bottom: $base-4;
+}
+.space-b-lg {
+  padding-bottom: $space-lg;
+}
+.space-b-xl {
+  padding-bottom: $space-xl;
+}
+
+//// TOP
+.space-t1 {
+  padding-top: $base-height;
+}
+.space-t2 {
+  padding-top: $base-2;
+}
+.space-t4 {
+  padding-top: $base-4;
+}
+.space-t3 {
+  padding-top: $base-3;
+}
+.space-t-lg {
+  padding-top: $space-lg;
+}
+.space-t-xl {
+  padding-top: $space-xl;
+}
+

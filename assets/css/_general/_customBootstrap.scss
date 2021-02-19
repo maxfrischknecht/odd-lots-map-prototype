@@ -1,0 +1,25 @@
+// Custom Bootstrap variable overrides go first
+// check bootstrap/scss/_variables.scss to find correct names
+$paragraph-margin-bottom:   1rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+
+// Include the bootstrap css
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';

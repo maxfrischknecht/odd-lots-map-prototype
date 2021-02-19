@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-boilerplate-plain",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "dev:host": "nuxt --hostname '192.168.0.199' --port 8000",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.3",
+    "@nuxtjs/pwa": "^3.3.2",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.20.1",
+    "core-js": "^3.8.0",
+    "nuxt": "^2.14.9",
+    "nuxt-purgecss": "^1.0.0",
+    "nuxt-social-meta": "0.0.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.1.0"
+  }
+}

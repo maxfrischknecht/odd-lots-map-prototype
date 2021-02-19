@@ -1,0 +1,112 @@
+/* Font Face
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+$fontimport: 'PlainRegular-Web';
+
+@font-face {
+  font-family: $fontimport;
+    src: url('/fonts/'+$fontimport+'.eot'),
+         url('/fonts/'+$fontimport+'.eot') format('embedded-opentype'),
+         url('/fonts/'+$fontimport+'.woff2') format('woff2'),
+         url('/fonts/'+$fontimport+'.woff') format('woff'),
+         url('/fonts/'+$fontimport+'.ttf') format('truetype'),
+         url('/fonts/'+$fontimport+'.svg#'+$fontimport+'') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+$sans: $fontimport, "Helvetica", "Arial", sans-serif;
+
+@mixin font-basics {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  color: $c-black;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+  transition:0.3s;
+}
+
+// TITLES 
+@mixin title-mobile {
+  @include font-basics;
+  font-family: $sans;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+@mixin title-desktop {
+  @include font-basics;
+  font-family: $sans;
+  font-size: 7rem;
+  line-height: 1;
+}
+
+// TEXTS
+// BASE CLASS FOR ALL TEXTS
+@mixin text-mobile {
+  @include font-basics;
+  font-family: $sans;
+  font-size: 2.0rem;
+  line-height: 1;
+}
+
+@mixin text-desktop {
+  @include font-basics;
+  font-family: $sans;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* Mobile Sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+// base classe for everything
+body, h1, h2, h3, h4, h5, h6, p, li {
+  @include text-mobile;
+}
+.title         { @include title-mobile; }
+
+// create a class for each font different from the base class
+// e.g. dia-small, dia-medium, dia-large, times-small, times-medium, times-large
+// or sans-small, ..., serif-small, ...
+
+/* Desktop Sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 768px) {
+  // body
+  body, h1, h2, h3, h4, h5, h6, p, li {
+    @include text-desktop;
+  }
+  .title         { @include title-desktop; }
+
+}
+
+/* General Font Settings
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+// create spacing between richtext p's
+.richtext-linebreaks p {
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: $c-text-sel;
+  background-color: $c-text-sel-bg;
+  // background-color: rgba(255, 0, 0, 0.99);
+}
+::selection {
+  color: $c-text-sel;
+  background-color: $c-text-sel-bg;
+  // background-color: rgba(255, 0, 0, 0.99);
+}
+::-webkit-selection {
+  color: $c-text-sel;
+  background-color: $c-text-sel-bg;
+  // background-color: rgba(255, 0, 0, 0.99);
+}
+
