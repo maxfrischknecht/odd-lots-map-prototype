@@ -1,12 +1,7 @@
 <template>
-  <b-container fluid>
-    <b-row>
-      <b-col>
-        Still tryin' to raise the charts so I don't have to push a shopping cart
-        (Denzel Curry)
-      </b-col>
-    </b-row>
-  </b-container>
+  <div>
+    <Map />
+  </div>
 </template>
 
 <script>

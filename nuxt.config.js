@@ -25,7 +25,7 @@ export default {
   plugins: [
   ],
 
-  // Auto import components (https:/  /go.nuxtjs.dev/config-components)
+  // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
@@ -47,7 +47,9 @@ export default {
     // https://github.com/nuxt-community/sitemap-module
     '@nuxtjs/sitemap',
     // https://github.com/nuxt-community/robots-module
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    // https://github.com/schlunsen/nuxt-leaflet
+    'nuxt-leaflet'
   ],
   // Only include the layout: https://bootstrap-vue.org/docs#nuxtjs-module
   bootstrapVue: {

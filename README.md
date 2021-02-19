@@ -1,4 +1,9 @@
-# nuxt-boilerplate-plain
+# Odd Lots Map Prototype
+
+## Further Ressources
+* [Map Tiles](https://leaflet-extras.github.io/leaflet-providers/preview/)
+* [Stame Tiles](http://maps.stamen.com/toner/#15/47.3801/8.5217)
+* [Open Street Maps Zoom Levels](https://wiki.openstreetmap.org/wiki/Zoom_levels)
 
 ## Build Setup
 
@@ -18,20 +23,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## Deployment
-
-### Vercel
-When deploying a static site on Vercel you need the change the build command:
-
-nuxt.config.js
-```
-"scripts": {
-    ...
-    "build": "nuxt generate",
-}
-```
-
-When deploying a server side rendered app on Vercel please include the [Vercel Builder](https://github.com/nuxt/vercel-builder).
-
-More information regarding Vercel deployment [here](https://nuxtjs.org/faq/now-deployment/).
